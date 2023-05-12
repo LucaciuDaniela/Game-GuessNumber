@@ -4,9 +4,23 @@ body {
     background-color: bisque;
 }
 @media (max-width: 900px) {
-    .container {
-    flex-direction: column;
+    .left {
+      width: auto!important;
     }
+    .right {
+      width: auto!important;
+    }
+    .quess {
+      width: auto!important;
+      padding: auto;
+    }
+    .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10rem;
+    }
+    
   }
 
 .title-guess {
@@ -56,15 +70,7 @@ h1 {
     margin-bottom: 3rem;
   }
 
-  .check {
-    border: none;
-    background-color: salmon;
-    color: #222;
-    font-size: 2rem;
-    font-family: inherit;
-    padding: 1rem 2rem;
-    cursor: pointer;
-  }
+ 
   
   .right {
     width: 52rem;
@@ -78,18 +84,4 @@ h1 {
   
   .label-score {
     margin-bottom: 2rem;
-  }
-
-  .again {
-    border: 1px solid salmon;
-    background-color: #eee;
-    border-radius: 5%;
-    color: #222;
-    font-size: 1.5rem;
-    font-family: inherit;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    margin-top: 50px;
-    margin-right: 500px;
-    float: right;
   }
